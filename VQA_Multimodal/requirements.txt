@@ -1,0 +1,34 @@
+# PyTorch y utilidades
+torch
+torchvision
+
+# Transformers y datasets de HuggingFace
+transformers
+datasets
+
+# Procesamiento de datos y utilidades
+pandas
+numpy
+scikit-learn
+Pillow
+
+# Visualización
+matplotlib
+
+# Progreso y descargas
+tqdm
+
+# Procesamiento de texto
+nltk
+
+# Si usas augmentaciones personalizadas
+randaugment
+
+# Si usas Jupyter Notebook
+notebook
+
+# Si usas funciones de dataclasses (Python <3.7)
+# dataclasses
+
+# Si usas funciones de tipado avanzado (Python <3.8)
+# typing-extensions

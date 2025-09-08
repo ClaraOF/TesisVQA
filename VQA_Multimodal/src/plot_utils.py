@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+
+def plot_training_statistics(training_loss_per_epoch, validation_loss_per_epoch, training_accuracy_per_epoch, validation_accuracy_per_epoch):
+    fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+    axes[0].plot(training_loss_per_epoch, color='blue')
+    axes[0].plot(validation_loss_per_epoch, color='red')
+    axes[0].set_xlabel('Epochs')
+    axes[0].set_ylabel('loss')
+    axes[0].grid(True)
+    axes[0].legend(['Training set', 'Validation set'])
+    axes[0].set_title('Loss function ')
+    axes[1].plot(training_accuracy_per_epoch, color='blue')
+    axes[1].plot(validation_accuracy_per_epoch, color='red')
+    axes[1].set_xlabel('Epochs')
+    axes[1].set_ylabel('Accuracy')
+    axes[1].grid(True)
+    axes[1].legend(['Training set', 'Validation set'])
+    axes[1].set_title('Accuracy')
+    axes[1].set_ylim([0, 1.0])
+    fig.tight_layout(pad=3.0)
+    plt.show()
